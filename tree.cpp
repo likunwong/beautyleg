@@ -35,3 +35,10 @@ void insertToTree(Node *root, int value)
         return 
     }
 }
+
+void printTree(Node *root)
+{
+    std::cout << root->value << std::endl;
+    printTree(root->left);
+    printTree(root->right);
+}
